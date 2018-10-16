@@ -1,5 +1,5 @@
 {
-    "name": "pxt-m01",
+    "name": "pxt-gp",
     "version": "0.0.0",
     "description": "",
     "dependencies": {
@@ -14,5 +14,5 @@
         "test.ts"
     ],
     "public": false,
-    "additionalFilePaths": []
+    "installedVersion": "workspace:56aa8ad8-1cf8-4e5e-134b-1f39c7b0f024"
 }
