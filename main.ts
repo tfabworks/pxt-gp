@@ -40,9 +40,13 @@ namespace gp {
         }
         return val;
     }
+    /**
+ *Set brightness.
+ * @param v number of brightness, eg: 30
+ */
     //% blockId=brightness_determination block="%v より %flag"
     //% v.min=0 v.max=255
-    export function brightnessDetermination(v: number, flag: BrightnessEvent): boolean {
+    export function brightnessDetermination(v: number = 30, flag: BrightnessEvent): boolean {
         let res: boolean = true;
         if (flag == 2) {
             res = !res;
