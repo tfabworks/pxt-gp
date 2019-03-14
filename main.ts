@@ -25,7 +25,7 @@ namespace gp {
     }
     //% blockId=is_dark block="暗い"
     export function isDark(): boolean {
-        if (input.lightLevel() < 30) {
+        if (input.lightLevel() < 20) {
             return true;
         } else {
             return false;
