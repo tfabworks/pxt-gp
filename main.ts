@@ -5,7 +5,7 @@ enum BrightnessEvent {
     IsBrighter = 2,
 }
 
-//% weight=70 icon="\uf1e6" color=#0fbc11 block="電気の利用"
+//% weight=70 icon="\uf1e6" color=#ffa500 block="電気の利用"
 namespace gp {
     //% blockId=human_detection block="人が動いた"
     export function humanDetection(): boolean {
