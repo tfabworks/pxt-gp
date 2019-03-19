@@ -1,5 +1,5 @@
 {
-    "name": "pxt-gp",
+    "name": "電気の利用",
     "version": "0.0.8",
     "description": "",
     "dependencies": {
@@ -14,5 +14,5 @@
         "test.ts"
     ],
     "public": false,
-    "installedVersion": "workspace:9e434acb-9402-417e-7709-6c212e34fc11"
+    "installedVersion": "workspace:79d10001-eac7-458e-ebb6-6d3c2fe4ad1d"
 }
