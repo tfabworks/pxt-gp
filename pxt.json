@@ -1,5 +1,5 @@
 {
-    "name": "電気の利用",
+    "name": "電気の利用_改造中",
     "version": "0.0.9",
     "description": "",
     "dependencies": {
@@ -14,5 +14,6 @@
         "test.ts"
     ],
     "public": false,
-    "installedVersion": "workspace:79d10001-eac7-458e-ebb6-6d3c2fe4ad1d"
+    "installedVersion": "workspace:03144855-ffef-4ca8-095a-1e2e493bb9b4",
+    "preferredEditor": "tsprj"
 }

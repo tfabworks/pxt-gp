@@ -7,6 +7,8 @@ enum BrightnessEvent {
 
 //% weight=70 icon="\uf1e6" color=#ffa500 block="電気の利用"
 namespace gp {
+    const DARK_DEFAULT = 10
+    let 暗さ判定閾値 = DARK_DEFAULT
     //% blockId=human_detection block="人が動いた"
     export function humanDetection(): boolean {
         if (pins.digitalReadPin(DigitalPin.P2) == 1) {
@@ -25,7 +27,7 @@ namespace gp {
     }
     //% blockId=is_dark block="暗い"
     export function isDark(): boolean {
-        if (input.lightLevel() < 20) {
+        if (input.lightLevel() < 暗さ判定閾値) {
             return true;
         } else {
             return false;
@@ -42,11 +44,11 @@ namespace gp {
     }
     /**
  *Set brightness.
- * @param v number of brightness, eg: 30
+ * @param v number of brightness, eg: 10
  */
     //% blockId=brightness_determination block="%v より %flag"
     //% v.min=0 v.max=255
-    export function brightnessDetermination(v: number = 30, flag: BrightnessEvent): boolean {
+    export function brightnessDetermination(v: number = DARK_DEFAULT, flag: BrightnessEvent): boolean {
         let res: boolean = true;
         if (flag == 2) {
             res = !res;
