@@ -7,7 +7,7 @@ enum BrightnessEvent {
 
 //% weight=70 icon="\uf1e6" color=#ffa500 block="電気の利用"
 namespace gp {
-    const DARK_DEFAULT = 10
+    const DARK_DEFAULT = 30
     let 暗さ判定閾値 = DARK_DEFAULT
     //% blockId=human_detection block="人が動いた"
     export function humanDetection(): boolean {
@@ -44,7 +44,7 @@ namespace gp {
     }
     /**
  *Set brightness.
- * @param v number of brightness, eg: 10
+ * @param v number of brightness, eg: 30
  */
     //% blockId=brightness_determination block="%v より %flag"
     //% v.min=0 v.max=255
